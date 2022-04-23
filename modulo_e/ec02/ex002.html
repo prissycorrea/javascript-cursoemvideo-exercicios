@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex002.css">
+    <title>Tabuada</title>
+</head>
+<body">
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+        <div id="msg">
+            <p><label for="op">Quer saber a tabuada de qual número?</label>
+                <input type="number" name="op" class="op" placeholder="Digite um número"></p>
+                
+            <p><button class="contar" value="contar" onclick="tabuada()">Contar</button></p>
+        </div>
+        <div class="result">
+            <select size = "10" name = "tabuada" class="selecTab">
+                <option>Digite um número acima.</option>
+            </select>
+        </div>
+    </section>
+<footer>
+    <p>by Nani</p>
+</footer>
+<script src="ex002.js"></script>
+</body>
+</html>

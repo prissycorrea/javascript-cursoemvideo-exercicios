@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 012</title>
+</head>
+<body>
+    <h1>Sistema de estrangeiros</h1>
+    Em que país você está vivendo? <input type="text" name="paisviv" id="paisviv">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div class="result"></div>
+    <div class="result2"></div>
+
+    <script>
+        function calcular() {
+            var pais = document.querySelector('#paisviv');
+            var pais2 = pais.value
+            var result = document.querySelector('.result');
+            var result2 = document.querySelector('.result2');
+            result.innerHTML = `<p>Vivendo em ${pais2}</p>`;
+            if(pais2 == 'Brasil' || pais2 == 'brasil' || pais2 == 'BRASIL') {
+                result2.innerHTML = `<p>Você é brasileiro</p>`;
+            } else {
+                result2.innerHTML = `<p>Você é estrangeiro</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
